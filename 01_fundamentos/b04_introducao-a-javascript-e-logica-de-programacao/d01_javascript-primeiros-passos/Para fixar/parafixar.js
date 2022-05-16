@@ -39,7 +39,7 @@
 
 // console.log(perimeter);
 
-// Para Fixar 4
+// // Para Fixar 4
 
 // const nota = 65;
 
