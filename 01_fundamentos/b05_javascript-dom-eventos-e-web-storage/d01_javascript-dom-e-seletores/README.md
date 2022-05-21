@@ -10,7 +10,7 @@ Seletores
 getElementById (Acessar apenas um elemento)
 getElementsByTagName
 getElementsByClassName (HTML Colection)
-querySelector
+querySelector "Pega o primeiro elemento encontrado, do elemento especificado"
 querySelectorAll (NodeList)
 
 
