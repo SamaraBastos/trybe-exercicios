@@ -117,29 +117,29 @@
 //     ("FINALMENTE, descanso merecido UwU");
 // }
 
-// Para Fixar 5
+// // Para Fixar 5
 
-var armazenar = 'aprovada'
+// var armazenar = 'aprovada'
 
-switch (armazenar){
+// switch (armazenar){
 
-    case"aprovada":
-    console.log("Passou de modulo");
-    break;
+//     case"aprovada":
+//     console.log("Passou de modulo");
+//     break;
 
-    case'reprovada':
-    console.log("reprovou de modulo");
-    break;
-
-
-    case'lista':
-    console.log("Atenção");
-    break;
+//     case'reprovada':
+//     console.log("reprovou de modulo");
+//     break;
 
 
-    default:
-    console.log('não se aplica');
-}
+//     case'lista':
+//     console.log("Atenção");
+//     break;
+
+
+//     default:
+//     console.log('não se aplica');
+// }
 
 
 
