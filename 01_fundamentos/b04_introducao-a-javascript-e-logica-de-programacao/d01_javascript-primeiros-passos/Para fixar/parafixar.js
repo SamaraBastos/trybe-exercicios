@@ -4,6 +4,7 @@
 // const birthCity = "Rio de Janeiro"
 // const birthYear = 2030
 
+
 // console.log(myName)
 // console.log(birthCity)
 // console.log(birthYear)
@@ -12,6 +13,7 @@
 // Para Fixar 2
 
 // let patientId = 50;
+
 // let isEnrolled = true;
 // const patientInfo = {
 //   firstName: 'Ana',
@@ -39,9 +41,9 @@
 
 // console.log(perimeter);
 
-// // Para Fixar 4
+// // // Para Fixar 4
 
-// const nota = 65;
+// const nota = 50;
 
 // if(nota >= 80){
 //     console.log("Parabéns, você foi aprovada(o)!")
@@ -117,27 +119,27 @@
 
 // Para Fixar 5
 
-// var armazenar = 'aprovada'
+var armazenar = 'aprovada'
 
-// switch (armazenar){
+switch (armazenar){
 
-//     case"aprovada":
-//     console.log("Pare");
-//     break;
+    case"aprovada":
+    console.log("Passou de modulo");
+    break;
 
-//     case'reprovada':
-//     console.log("siga");
-//     break;
-
-
-//     case'lista':
-//     console.log("Atenção");
-//     break;
+    case'reprovada':
+    console.log("reprovou de modulo");
+    break;
 
 
-//     default:
-//     console.log('não se aplica');
-// }
+    case'lista':
+    console.log("Atenção");
+    break;
+
+
+    default:
+    console.log('não se aplica');
+}
 
 
 
