@@ -17,6 +17,8 @@
 //   console.log(conta.banco.cod); // 012
 //   console.log(conta['banco']['id']); // 4
 
+/////////////////////////////////////////////////////////////
+
 
 // let usuario = {
 //     id: 99,
@@ -38,6 +40,8 @@
   
 //   console.log(usuario.infoPessoal.endereco.rua); // Smith Street
 //   console.log(usuario['infoPessoal']['endereco']['cidade']); // Nova Iorque
+
+/////////////////////////////////////////////////////////////////////////////////
 
 
 // let moradores = [
