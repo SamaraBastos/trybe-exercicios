@@ -17,11 +17,11 @@ ol li {
   /* - Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e,
   se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente
   uma borda de 1px preta e sólida. */
-  h1, h2 {
+  h1, h3 {
     color: red;
   }
   
-  h1 em, h2 em {
+  h1 em, h3 em {
     font-size: 40px;
     border: 1px solid black;
   }
@@ -53,7 +53,7 @@ ol li {
   /* - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora,
   faça com que ao passar o mouse sobre cada um, o texto fique em negrito e
   assuma a cor de fonte "temática do site"
-  Dica 1: Utilize o seletor :hover para controlar o passar do mouse.
+  Dica 1: Utilize o seletor :hover para con trolar o passar do mouse.
   Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde),
   MDN (preta), DevDocs (amarela), Trybe (verde). */
   #aliados li a:hover {

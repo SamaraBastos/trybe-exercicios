@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    let acessandoBody = document.querySelector('body');
+
+    //Passo 1
+    function criandoH1() {
+      let titulo = document.createElement('h1');
+      titulo.className = 'title';
+      acessandoBody.appendChild(titulo);
+
+      titulo.innerHTML = 'Exercício 5.2 - JavaScript DOM'
+    }
+    criandoH1();
+
+    //Passo 2
+    function criandoTagMain() {
+
+      let tagMain = document.createElement('main');
+      tagMain.className = 'main-content';
+      acessandoBody.appendChild(tagMain);
+    }
+    criandoTagMain();
+
+    //Passo 3
+    let acessandoMain = document.querySelector('.main-content');
+
+    function criandoSection() {
+      let tagSection = document.createElement('section');
+      tagSection.className = 'center-content'
+      tagSection.style.background = 'green'
+      acessandoMain.appendChild(tagSection);
+    }
+    criandoSection();
+    //Passo 4
+    let acessandoSection = document.querySelector('.center-content');
+    function CriandoTagP() {
+      let tagP = document.createElement('p');
+      acessandoSection.appendChild(tagP);
+
+      tagP.innerHTML = 'Algum Texto'
+    }
+    CriandoTagP();
+
+    //Passo 5
+
+    function criandoSectionTwo() {
+      let tagSectionTwo = document.createElement('section');
+      tagSectionTwo.className = 'left-content'
+      acessandoMain.appendChild(tagSectionTwo);
+    }
+    criandoSectionTwo();
+
+    let acessandoSectionTwo = document.querySelector('.left-content');
+    //Passo 6
+    function criandoSectionThree() {
+      let tagSectionThree = document.createElement('section');
+      tagSectionThree.className = 'right-content';
+      tagSectionThree.style.marginRight = 'auto'
+      acessandoMain.appendChild(tagSectionThree);
+    }
+    criandoSectionThree();
+
+
+    let acessandoSectionThree = document.querySelector('.right-content');
+    //Passo 7
+
+    function criandoElementoImg() {
+      let tagImg = document.createElement('img');
+      tagImg.className = 'small-image';
+      tagImg.src = 'https://picsum.photos/200'
+      acessandoSectionTwo.appendChild(tagImg);
+    }
+    criandoElementoImg();
+
+    //Passo 8
+
+    let numerosPorExtenso = [
+      'um',
+      'dois',
+      'três',
+      'quatro',
+      'cinco',
+      'seis',
+      'sete',
+      'oito',
+      'nove',
+      'dez'
+    ]
+
+    function criandoListas() {
+      let tagList = document.createElement('ul');
+      acessandoSectionThree.appendChild(tagList);
+      tagList.className = 'lista-nao-ordenada'
+    }
+    criandoListas()
+    let acessandoListaNaoOrdenada = document.querySelector('.lista-nao-ordenada')
+
+
+    function numeros() {
+      for (let index = 0; index < numerosPorExtenso.length; index += 1) {
+        let number = numerosPorExtenso[index];
+        let numbersItens = document.createElement('li');
+        numbersItens.innerText = number;
+        numbersItens.className = 'list-item';
+
+        acessandoListaNaoOrdenada.appendChild(numbersItens);
+      }
+
+    }
+    numeros();
+
+    function criandoTagH3() {
+      for (let index = 1; index <= 3; index += 1) {
+        let TagH3 = document.createElement('h3');
+        TagH3.className = 'description'
+        acessandoMain.appendChild(TagH3);
+      }
+    }
+    criandoTagH3();
+
+
+    function removeIten() {
+
+      const element = document.getElementsByClassName('left-content')[0];
+      acessandoMain.removeChild(element);
+    }
+
+    removeIten();
+
+    function remoItens(){
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+    }
+    remoItens();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas</title>
+</head>
+
+<body>
+  <header>
+    <h2>Feijão Tropeiro</h2>
+  </header>
+
+  <section class="ingredient-section">
+    <h2>Ingredientes</h2>
+    <ul class="ingredient-list"></ul>
+  </section>
+
+  <section class="recipe-preparation-section">
+    <h2>Modo de preparo</h2>
+
+    <ol class="recipe-preparation-list">
+      <li>Coloque o óleo em uma panela e doure a cebola, acrescente o bacon e frite bem.</li>
+      <li>Adicione o alho, sal e os ovos, misturando com cuidado para que não se despedacem muito.</li>
+      <li>Refogue o feijão, baixe o fogo, misture a farinha aos poucos e o cheiro-verde.</li>
+    </ol>
+  </section>
+
+  <script>
+    let ingredientItens = [
+      '500 g de feijão carioquinha cozido',
+      '200 g de toucinho',
+      '1 concha de óleo',
+      '1 cebola média picada',
+      '4 dentes de alho',
+      '5 ovos',
+      '1 colher (sopa) de sal com alho',
+      'cheiro-verde a gosto',
+      '200 g de farinha de mandioca'
+    ]
+    let ingredientList = document.querySelector('.ingredient-list');
+
+    function listaDeIngredientes() {
+
+      for (let index = 0; index < ingredientItens.length; index += 1) {
+        let ingredient = ingredientItens[index];
+
+        let ingredientListItens = document.createElement('li');
+        ingredientListItens.innerText = ingredient;
+        ingredientListItens.className = 'ingredient-list-item';
+
+        ingredientList.appendChild(ingredientListItens);
+      }
+    }
+    listaDeIngredientes();
+
+    function removeIten() {
+      let ingredientListIten = document.querySelectorAll('.ingredient-list-item');
+
+      for (let index = 0; index < ingredientListIten.length; index += 1) {
+        let element = ingredientListIten[index];
+
+        if (element.innerText.includes('toucinho')) {
+          ingredientList.removeChild(element);
+        }
+
+      }
+    }
+    removeIten();
+  </script>
+</body>
+
+</html>
