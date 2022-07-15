@@ -9,7 +9,7 @@
 // console.log('Divisão: ' + (a / b));
 // console.log('Módulo: ' + (a % b));
 
-// Exercicio 2
+// // Exercicio 2
 
 // const a = 10;
 // const b = 15;
@@ -51,7 +51,7 @@
 
 // Exercicio 4
 
-// const valor = 96
+// const valor = 0
 
 // if(valor > 0){
 //     console.log("positive")
@@ -72,11 +72,13 @@
 
 // if(angulos % 2 == 0){
 // console.log(true)
-// } else if(anguloTwo % 2 == 0){
+// } else if(angulos % 2 == 0){
 //     console.log(false)
 // } else{
 //     console.log('Erro: ângulo inválido')
 // }
+
+// % = Operador de módulo. Retorna o restante de dois operandos.
 
 //////////////////////////////////////////////
 

@@ -35,7 +35,7 @@ div:hover {
   /*Aqui estamos pegando a segunda div e o primeiro h3 e assim por diante nas próximas div */
   
   div:nth-of-type(2) > h3 {
-    color: green 
+    color: aliceblue 
   }
   
   div:nth-of-type(3) > h3 {

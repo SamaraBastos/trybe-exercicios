@@ -1,33 +1,37 @@
-// Para Fixar
+// // Para Fixar
 
-// const myName = "Samara"
-// const birthCity = "Rio de Janeiro"
-// const birthYear = 2030
-
-// console.log(myName)
-// console.log(birthCity)
-// console.log(birthYear)
+// // const myName = "Samara";
+// // const birthCity = "Rio de Janeiro";
+// // var birthYear = 1996;
+// // birthYear = 2030;
+// // birthCity = lala
 
 
-// Para Fixar 2
+// // console.log(myName)
+// // console.log(birthCity)
+// // console.log(birthYear)
 
-// let patientId = 50;
-// let isEnrolled = true;
-// const patientInfo = {
-//   firstName: 'Ana',
-//   lastName: 'Santos',
-// };
-// const patientEmail = 'ana@email.com';
 
-// patientId = '50'
+// // Para Fixar 2
 
-// console.log(typeof patientId) ;
-// console.log(typeof isEnrolled);
-// console.log(typeof patientEmail) ;
-// console.log(typeof patientInfo) ;
-// console.log(typeof patientAge);
+// // let patientId = 50;
 
-// Para Fixar 3
+// // let isEnrolled = true;
+// // const patientInfo = {
+// //   firstName: 'Ana',
+// //   lastName: 'Santos',
+// // };
+// // const patientEmail = 'ana@email.com';
+
+// // patientId = '50'
+
+// // console.log(typeof patientId) ;
+// // console.log(typeof isEnrolled);
+// // console.log(typeof patientEmail) ;
+// // console.log(typeof patientInfo) ;
+// // console.log(typeof patientAge);
+
+// // Para Fixar 3
 
 // const base = 5;
 // var height = 8;
@@ -39,9 +43,9 @@
 
 // console.log(perimeter);
 
-// // Para Fixar 4
+// // // Para Fixar 4
 
-// const nota = 65;
+// const nota = 75;
 
 // if(nota >= 80){
 //     console.log("Parabéns, você foi aprovada(o)!")
@@ -88,7 +92,7 @@
 
 // Exemplos:
 
-// const currentHour = 3;
+// const currentHour = 13;
 // var message = "";
 
 // if(currentHour >= 22){
@@ -115,29 +119,29 @@
 //     ("FINALMENTE, descanso merecido UwU");
 // }
 
-// Para Fixar 5
+// // // Para Fixar 5
 
-// var armazenar = 'aprovada'
+var armazenar = 'aprovada'
 
-// switch (armazenar){
+switch (armazenar){
 
-//     case"aprovada":
-//     console.log("Pare");
-//     break;
+    case"aprovada":
+    console.log("Passou de modulo");
+    break;
 
-//     case'reprovada':
-//     console.log("siga");
-//     break;
-
-
-//     case'lista':
-//     console.log("Atenção");
-//     break;
+    case'reprovada':
+    console.log("reprovou de modulo");
+    break;
 
 
-//     default:
-//     console.log('não se aplica');
-// }
+    case'lista':
+    console.log("Atenção");
+    break;
+
+
+    default:
+    console.log('não se aplica');
+}
 
 
 
